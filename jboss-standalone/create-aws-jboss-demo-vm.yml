@@ -16,6 +16,7 @@
       keypair: "{{ ec2_keypair }}"
       group: "{{ ec2_security_group }}"
       type: "{{ ec2_instance_type }}"
+      vpc_subnet_id: subnet-0e747b0749b088f9f
       image: "{{ ec2_image }}"
       region: "{{ ec2_region }}"
       instance_tags: "{'ansible_group':'jboss', 'type':'{{ ec2_instance_type }}', 'group':'{{ ec2_security_group }}', 'Name':'{{ tower_user_name }}''_jboss_demo'}"
